@@ -1,0 +1,22 @@
+﻿// Найти расстояние между точками в пространстве 2D/3D:
+Console.WriteLine("Enter first point coordinates (x,y,z): ");
+Console.WriteLine("Enter first point x coordinate. ");
+Console.Write("x = ");
+double x1 = int.Parse(Console.ReadLine() ?? "0");
+Console.WriteLine("Enter first point y coordinate. ");
+Console.Write("y = ");
+double y1 = int.Parse(Console.ReadLine() ?? "0");
+Console.WriteLine("Enter first point z coordinate. For 2d point z = 0 ");
+Console.Write("z = ");
+double z1 = int.Parse(Console.ReadLine() ?? "0");
+Console.WriteLine("Enter second point x coordinate. ");
+Console.Write("x = ");
+double x2 = int.Parse(Console.ReadLine() ?? "0");
+Console.WriteLine("Enter second point y coordinate. ");
+Console.Write("y = ");
+double y2 = int.Parse(Console.ReadLine() ?? "0");
+Console.WriteLine("Enter second point z coordinate. For 2d point z = 0 ");
+Console.Write("z = ");
+double z2 = int.Parse(Console.ReadLine() ?? "0");
+double distance = Math.Sqrt(Math.Pow((x1-x2), 2) + Math.Pow((y1-y2), 2) + Math.Pow((z1-z2), 2));
+Console.WriteLine($"Distance between points ({x1}, {y1}, {z1}) and ({x2}, {y2}, {z2}) equals {distance} ");
