@@ -38,4 +38,4 @@ for (int i = 0; i<array12.Length; i++)
 {
     if (array12[i] < 0) countNegative++;
 }
-Console.WriteLine($"Positive numbers occur in the array {countNegative} times ");
+Console.WriteLine($"Negative numbers occur in the array {countNegative} times ");
